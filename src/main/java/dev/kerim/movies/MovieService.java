@@ -11,7 +11,7 @@ import java.util.Optional;
 public class MovieService {
     @Autowired
     private MovieRepository movieRepository;
-    public List<Movie> allMovies(){
+    public List<Movie> findAllMovies(){
         return movieRepository.findAll();
     }
 
